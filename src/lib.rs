@@ -92,6 +92,7 @@ mod db_iter;
 pub mod compressor;
 pub mod env;
 
+pub use asyncdb::SnapshotRef;
 #[cfg(feature = "asyncdb-async-std")]
 pub use asyncdb_async_std::AsyncDB;
 #[cfg(feature = "asyncdb-tokio")]
